@@ -55,7 +55,7 @@ export function EditTaskDialog({ isOpen, onOpenChange, task, day }: EditTaskDial
         <DialogHeader>
           <DialogTitle>Edit Task</DialogTitle>
           <DialogDescription>
-            Make changes to your task here. Click save when you're done.
+            Make changes to your task here. Click save when you&apos;re done.
           </DialogDescription>
         </DialogHeader>
         <Form {...form}>

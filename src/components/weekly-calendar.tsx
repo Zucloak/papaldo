@@ -32,7 +32,7 @@ export function WeeklyCalendar() {
     <>
       <Card>
         <CardHeader>
-          <CardTitle className="text-lg font-medium">This Week's Schedule</CardTitle>
+          <CardTitle className="text-lg font-medium">This Week&apos;s Schedule</CardTitle>
         </CardHeader>
         <CardContent>
           {!activeTab ? (
