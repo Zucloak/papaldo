@@ -14,9 +14,12 @@ const Header = () => {
     <header className="px-4 py-6 md:px-6">
       <div className="mx-auto max-w-5xl">
         <div className="flex items-center justify-between">
-          <h1 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl font-headline">
-            Papal-Do <span className="text-primary">Routine</span>
-          </h1>
+          <div>
+            <h1 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl font-headline">
+              Papal-Do <span className="text-primary">Routine</span>
+            </h1>
+            <p className="text-sm text-muted-foreground">Ni Chynna</p>
+          </div>
           <div className="text-right">
             {currentDate ? (
               <>
