@@ -136,7 +136,15 @@ export const ScheduleProvider = ({ children }: { children: ReactNode }) => {
   }, [todayProgress, schedule]);
 
 
-  const value = { schedule, isLoading, updateTask, updateTaskStatus, getTasksForDay, streak, todayProgress };
+  const value = React.useMemo(() => ({
+    schedule,
+    isLoading,
+    updateTask,
+    updateTaskStatus,
+    getTasksForDay,
+    streak,
+    todayProgress
+  }), [schedule, isLoading, updateTask, updateTaskStatus, getTasksForDay, streak, todayProgress]);
 
   return <ScheduleContext.Provider value={value}>{children}</ScheduleContext.Provider>;
 };

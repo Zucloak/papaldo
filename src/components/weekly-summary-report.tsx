@@ -17,6 +17,8 @@ import {
 import { dayOrder } from "@/lib/types";
 import { generateWeeklySummaryReport, WeeklySummaryReportOutput } from "@/ai/flows/weekly-summary-report";
 import { useToast } from "@/hooks/use-toast";
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 
 export function WeeklySummaryReport() {
   const { schedule } = useSchedule();
@@ -109,11 +111,11 @@ export function WeeklySummaryReport() {
             </AlertDialogDescription>
           </AlertDialogHeader>
           {report && (
-            <div className="text-sm max-h-[60vh] overflow-y-auto pr-2">
+            <div className="text-sm max-h-[60vh] overflow-y-auto pr-2 prose prose-sm dark:prose-invert">
                 <h3 className="font-bold mb-2">Summary</h3>
-                <p className="mb-4 text-muted-foreground">{report.summary}</p>
+                <ReactMarkdown remarkPlugins={[remarkGfm]} className="mb-4 text-muted-foreground">{report.summary}</ReactMarkdown>
                 <h3 className="font-bold mb-2">Recommendations</h3>
-                <p className="text-muted-foreground whitespace-pre-wrap">{report.recommendations}</p>
+                <ReactMarkdown remarkPlugins={[remarkGfm]} className="text-muted-foreground whitespace-pre-wrap">{report.recommendations}</ReactMarkdown>
             </div>
           )}
           <AlertDialogFooter>
