@@ -65,6 +65,13 @@ export default {
           border: 'hsl(var(--sidebar-border))',
           ring: 'hsl(var(--sidebar-ring))',
         },
+        task: {
+          review: 'hsl(var(--task-review))',
+          problems: 'hsl(var(--task-problems))',
+          meals: 'hsl(var(--task-meals))',
+          rest: 'hsl(var(--task-rest))',
+          exams: 'hsl(var(--task-exams))',
+        },
       },
       borderRadius: {
         lg: 'var(--radius)',
