@@ -130,7 +130,7 @@ export function EditTaskDialog({ isOpen, onOpenChange, task, day }: EditTaskDial
                 <FormItem>
                   <FormLabel>Notes</FormLabel>
                   <FormControl>
-                    <Textarea placeholder="Add any notes here..." {...field} />
+                    <Textarea placeholder="Add any notes here..." {...field} value={field.value || ''} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
