@@ -50,7 +50,7 @@ export default function DashboardPage() {
       </div>
        <footer className="py-6 px-4 md:px-6 border-t">
         <div className="mx-auto max-w-5xl text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} EngiTrack. Focus on your success.</p>
+          <p>&copy; {new Date().getFullYear()} Papal-Do Routine. Focus on your success.</p>
         </div>
       </footer>
     </main>

@@ -16,8 +16,8 @@ interface ScheduleContextType {
 
 const ScheduleContext = createContext<ScheduleContextType | undefined>(undefined);
 
-const STORAGE_KEY = 'engiTrackSchedule';
-const STREAK_KEY = 'engiTrackStreak';
+const STORAGE_KEY = 'papalDoRoutineSchedule';
+const STREAK_KEY = 'papalDoRoutineStreak';
 
 export const ScheduleProvider = ({ children }: { children: ReactNode }) => {
   const [schedule, setSchedule] = useState<WeeklySchedule | null>(null);

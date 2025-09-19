@@ -4,7 +4,7 @@ import { Providers } from './providers';
 import { cn } from '@/lib/utils';
 
 export const metadata: Metadata = {
-  title: 'EngiTrack - Weekly Calendar Tracker',
+  title: 'Papal-Do Routine - Weekly Calendar Tracker',
   description: 'A mobile-first web app for tracking a Mechanical Engineering board exam routine.',
 };
 

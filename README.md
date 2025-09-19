@@ -1,4 +1,4 @@
-# EngiTrack - Weekly Calendar Tracker
+# Papal-Do Routine - Weekly Calendar Tracker
 
 This is a Next.js web application designed as a weekly calendar tracker for a Mechanical Engineering board exam routine.
 

@@ -15,7 +15,7 @@ const Header = () => {
       <div className="mx-auto max-w-5xl">
         <div className="flex items-center justify-between">
           <h1 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl font-headline">
-            Engi<span className="text-primary">Track</span>
+            Papal-Do <span className="text-primary">Routine</span>
           </h1>
           <div className="text-right">
             {currentDate ? (

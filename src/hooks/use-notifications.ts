@@ -37,7 +37,7 @@ export const useNotifications = () => {
           const delay = notificationTime.getTime() - now.getTime();
           
           setTimeout(() => {
-            new Notification('EngiTrack Reminder', {
+            new Notification('Papal-Do Routine Reminder', {
               body: `Time for ${task.title}!`,
               icon: '/icon.png' // You can add an icon to your public folder
             });
